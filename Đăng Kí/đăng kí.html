@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dang Ki</title>
+	<link rel="stylesheet" type="text/css" href="dangki1.css">
+	<script type = "text/javascript">
+		 function validateForm() {
+             var name = document.forms["ht"]["ho ten"].value;
+             if(name == "") {
+                 alert("vui long nhap ho ten");
+                 return false;
+             }
+             return true;
+         }
+		 function dangkyByJavascript()  {
+ 
+             var valid = validateForm();
+             if(!valid)  {
+               return;
+             }
+ 
+             var ht = document.forms["ht"];
+ 
+             ht.dangky();
+         }
+		 function validateForm() {
+             var name1 = document.forms["ntns"]["ngay thang nam sinh"].value;
+             if(name == "") {
+                 alert("vui long nhap ngay thang nam sinh");
+                 return false;
+             }
+             return true;
+         }
+		function dangkyByJavascript()  {
+ 
+             var valid = validateForm();
+             if(!valid)  {
+               return;
+             }
+ 
+             var ntns = document.forms["ntns"];
+ 
+             ntns.dangky();
+         }
+		 function validateForm() {
+             var name2 = document.forms["sdt"]["so dien thoai"].value;
+             if(name == "") {
+                 alert("vui long nhap so dien thoai");
+                 return false;
+             }
+             return true;
+         }
+		function dangkyByJavascript()  {
+ 
+             var valid = validateForm();
+             if(!valid)  {
+               return;
+             }
+ 
+             var sdt = document.forms["sdt"];
+ 
+             sdt.dangky();
+         }
+		 function validateForm() {
+             var name3 = document.forms["gm"]["gmail"].value;
+             if(name == "") {
+                 alert("vui long nhap gmail");
+                 return false;
+             }
+             return true;
+         }
+		function dangkyByJavascript()  {
+ 
+             var valid = validateForm();
+             if(!valid)  {
+               return;
+             }
+ 
+             var gm = document.forms["gm"];
+ 
+             gm.dangky();
+         }
+		 function validateForm() {
+             var name4 = document.forms["mk"]["matkhau"].value;
+             if(name == "") {
+                 alert("vui long nhap mat khau");
+                 return false;
+             }
+             return true;
+         }
+		function dangkyByJavascript()  {
+ 
+             var valid = validateForm();
+             if(!valid)  {
+               return;
+             }
+ 
+             var mk = document.forms["mk"];
+ 
+             mk.dangky();
+         }
+		 function validateForm() {
+             var name5 = document.forms["nl"]["nhap lai"].value;
+             if(name == "") {
+                 alert("vui long nhap lai mat khau");
+                 return false;
+             }
+             return true;
+         }
+		function dangkyByJavascript()  {
+ 
+             var valid = validateForm();
+             if(!valid)  {
+               return;
+             }
+ 
+             var nl = document.forms["nl"];
+ 
+             nl.dangky();
+         }
+	</script>
+	</head>
+<body>
+	<section class= "thietke">
+
+  <div class="menu">
+	  
+	  <div class="danhsach">
+			<ul>
+				<li>	<a href="./"> <img src="../Trang Chủ/My Boo.png" width="190px" height="130px"> </a></li>
+				<li>	<a href="xe.html" >TRANG CHỦ </a></li>
+				<li>	<a href="../../Đông Cơ/Động Cơ.html"> CÔNG NGHỆ </a></li>
+				<li>	<a href="./"> DỊCH VỤ </a></li>
+				<li>	<a href="./"> LIÊN HỆ </a></li>
+				<li> 	<a href="../../Bảng Giá/Bảng Giá.html"> BẢNG GIÁ  </a></li>
+				<li> 	<a href="./"> SẢN PHẨM  </a></li>
+				
+			
+   
+ <li> <div class ="timkiem">
+			 	 <input type="" name="" placeholder ="Tìm kiếm">
+				<button type="button"> Click </button>	    
+	 
+	</div> 
+				</li>
+		  </ul>	
+		  
+		  
+	  </div>
+	</div>
+	
+	<div class="dangnhap">
+		<h2>Đăng Kí</h2> 
+		 <form name="ht" action="process-action.html" onsubmit = "return validateForm()">
+          <input type="text" name = "ho ten" value ="" placeholder="Ho ten"/>
+		</form>
+		  <form name="ntns" action="process-action.html" onsubmit = "return validateForm()">
+          <input type="text" name1 = "ngay thang nam sinh" value =""  placeholder="Ngay Thang Nam Sinh"/>
+        </form>
+		<form name="sdt" action="process-action.html" onsubmit = "return validateForm()">
+          <input type="text" name2 = "so dien thoai" value =""  placeholder="So dien thoai"/>
+         </form>
+		 <form name="gm" action="process-action.html" onsubmit = "return validateForm()">
+          <input type="text" name3 = "Gmail" value =""  placeholder="Gmail"/>
+		 </form>
+		 <form name="mk" action="process-action.html" onsubmit = "return validateForm()">
+          <input type="password" name4 = "mat khau" value =""  placeholder="Mat khau"/>
+        </form>
+		<form name="nl" action="process-action.html" onsubmit = "return validateForm()">
+          <input type="password" name5 = "nhap lai" value =""  placeholder="Nhap lai"/>
+         </form>
+		 <a href="./"> <button type="dangky"> Dangky </button> </a>
+	</div>
+</body>
+</html>

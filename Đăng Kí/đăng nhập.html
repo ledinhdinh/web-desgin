@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>dangnhapdangki</title>
+	<link rel="stylesheet" type="text/css" href="dangnhapdangxuat.css">
+	<script type = "text/javascript" >
+		function validateForm() {
+             var name = document.forms["tdn"]["ten dang nhap"].value;
+             if(name == "") {
+                 alert("vui long nhap ten dang nhap");
+                 return false;
+             }
+             return true;
+         }
+		 function dangkyByJavascript()  {
+ 
+             var valid = validateForm();
+             if(!valid)  {
+               return;
+             }
+ 
+             var tdn = document.forms["tdn"];
+ 
+             tdn.dangky();
+         }
+		function validateForm() {
+             var name = document.forms["mk"]["Mat khau"].value;
+             if(name == "") {
+                 alert("vui long nhap mat khau");
+                 return false;
+             }
+             return true;
+         }
+		 function dangkyByJavascript()  {
+ 
+             var valid = validateForm();
+             if(!valid)  {
+               return;
+             }
+ 
+             var mk = document.forms["mk"];
+ 
+             mk.dangky();
+         }
+	</script>
+</head>
+<body>
+	<section class= "thietke">
+
+  <div class="menu">
+	  
+	  <div class="danhsach">
+			<ul>
+				<li>	<a href="./"> <img src="../Trang Chủ/My Boo.png" width="190px" height="130px"> </a></li>
+				<li>	<a href="xe.html" >TRANG CHỦ </a></li>
+				<li>	<a href="../../Đông Cơ/Động Cơ.html"> CÔNG NGHỆ </a></li>
+				<li>	<a href="./"> DỊCH VỤ </a></li>
+				<li>	<a href="./"> LIÊN HỆ </a></li>
+				<li> 	<a href="../../Bảng Giá/Bảng Giá.html"> BẢNG GIÁ  </a></li>
+				<li> 	<a href="./"> SẢN PHẨM  </a></li>
+				
+			
+   
+ <li> <div class ="timkiem">
+			 	 <input type="" name="" placeholder ="Tìm kiếm">
+				<button type="button"> Click </button>	    
+	 
+	</div> 
+				</li>
+		  </ul>	
+		  
+		  
+	  </div>
+	</div>
+	
+<div class="dangnhap">
+		<h2>Đăng Nhập</h2>
+		 <form name="tdn" action="process-action.html" onsubmit = "return validateForm()">
+          <input type="text" name = "ten dang nhap" value ="" placeholder="Tên đăng nhập"/>
+         </form>
+		 <form name="mk" action="process-action.html" onsubmit = "return validateForm()">
+          <input type="password" name = "mat khau" value ="" placeholder="Mật khẩu"/>
+         </form>
+		<a href="./"> <button> Enter </button> </a>
+	<a href="dangki.html"> <h3> Đăng Kí </h3> </a>
+	</div>
+	</section>
+</body>
+</html>

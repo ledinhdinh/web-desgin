@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>dangnhapdangki</title>
+	<link rel="stylesheet" type="text/css" href="dangnhapdangxuat.css">
+	<script type = "text/javascript" >
+		function validateForm() {
+             var u= document.getElementByname("tendangnhap").value;
+			 var p= document.getElementByname("matkhau").value;
+			
+             if(u== "") {
+                 alert("vui long nhap ten dang nhap");
+                 return false;
+				 u["tdn"].focus;
+             }
+		if(p== "") {
+                 alert("vui long nhap mat khau");
+                return false;
+			p["mk"].focus.;
+		   }
+			if (u="ngocdt" && p="ngocdt"){
+				alert("chao ngoc de tao");
+				return true;
+			}
+			else{
+				alert("nhap sai tai khoan");
+				document.getElementByname("tdn").value="";
+				document.getElementByname("mk").value="";
+				return false;
+			}
+		}
+	</script>
+</head>
+<body>
+	<section class= "thietke">
+  <div class="menu">
+	  <div class="danhsach">
+			<ul>
+				<li>	<a href="./"> <img src="My Boo.png" width="190px" height="130px"></a></li>
+				<li>	<a href="./"> TRANG CHỦ </a></li>
+				<li>	<a href="./"> CÔNG NGHỆ </a></li>
+				<li>	<a href="./"> CHÍNH SÁCH </a></li>
+				<li>	<a href="./"> LIÊN HỆ </a></li>
+				<li> <a href ="./" > BẢNG GIÁ </a></li>
+ <li> <div class ="timkiem">
+			 	 <input  type="" name="" placeholder ="Tìm kiếm">
+				<button  type="button"> Click </button>	    
+	</div> 
+				</li>
+</ul>
+	<div class="dangnhap"> 
+		<form  name="tdn" method="get" action="thietkexe1.html" onsubmit = "return validateForm()">
+		<h2>Dang Nhap</h2>
+	   <input type="text" name = "tdn"  value ="" placeholder="Ten Dang Nhap"/>
+       <input type="text" name = "mk"  value ="" placeholder="Mat Khau"/>
+			 <a href="./"	> <button type="submit"> Dang nhap </button></a>
+			<a href="dangki.html"> <h3> Tao Tai Khoan </h3></a>
+		</form>
+</div>
+</body>
+</html>

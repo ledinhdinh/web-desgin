@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>dangnhapdangki</title>
+	<link rel="stylesheet" type="text/css" href="dangki1.css">
+	<script type = "text/javascript" >
+		function validateForm() {
+            var ht= document.getElementByname("ht").value;
+			var sdt= document.getElementByname("sdt").value;
+			var g= document.getElementByname("g").value;
+			var mk= document.getElementByname("mk").value;
+			var nl= document.getElementByname("nl").value;
+             if(ht== "") {
+                 alert("vui long nhap ho ten cua ban");
+                 return false;
+				 ht["ht"].focus;
+             }
+		if(sdt== "") {
+                 alert("vui long nhap so dien thoai cua ban");
+                return false;
+			sdt["sdt"].focus.;
+		   }
+			if(g== "") {
+                 alert("vui long nhap gmail cua ban");
+                return false;
+			g["g"].focus.;
+		   }
+			if(mk== "") {
+                 alert("vui long nhap mat khau cua ban");
+                return false;
+			mk["mk"].focus.;
+		   }
+            if(sdt== "") {
+                 alert("vui long nhap lai mat khau 1 lan nua");
+                return false;
+			nl["nl"].focus.;
+		   }
+			if (u="ntd" && p="ntd"){
+				alert("cong ty ntd chao ban !");
+				return true;
+			}
+			else{
+				alert("nhap sai tai khoan");
+				document.getElementByname("ht").value="";
+				document.getElementByname("sdt").value="";
+				document.getElementByname("g").value="";
+				document.getElementByname("mk").value="";
+				document.getElementByname("nl").value="";
+				return false;
+			}
+		}
+	</script>
+</head>
+<body>
+	
+  <div class="menu">
+	  <div class="danhsach">
+		  <ul>
+				<li>	<a href="./"> <img src="My Boo.png" width="190px" height="130px"></a></li>
+				<li>	<a href="./"> TRANG CHỦ </a></li>
+				<li>	<a href="./"> CÔNG NGHỆ </a></li>
+				<li>	<a href="./"> CHÍNH SÁCH </a></li>
+				<li>	<a href="./"> LIÊN HỆ </a></li>
+				<li> <a href ="./" > BẢNG GIÁ </a></li>
+ <li> <div class ="timkiem">
+			 	 <input type="" name="" placeholder ="Tìm kiếm">
+				<button type="button"> click </button>	    
+	</div> 
+				</li>
+</ul>
+	  </div>
+	</div>
+	<div class="dangnhap">
+ <form  name="tdn" method="get" action="thietkexe1.html" onsubmit = "return validateForm()">
+		<h2>Dang ky</h2>
+	   <input type="text" name = "ht"  value ="" placeholder="Ho Va Ten"/>
+       <input type="text" name = "sdt"  value ="" placeholder="So Dien Thoai"/>
+       <input type="text" name = "g"  value ="" placeholder="Gmail"/>
+	   <input type="password" name = "mk"  value ="" placeholder="Mat Khau"/>
+	   <input type="password" name = "nl"  value ="" placeholder="Nhap lai"/>
+		 <a href="./"> <button type="submit"> Dang ky </button>	</a>
+			</form>  
+		 </div>
+</body>
+</html>

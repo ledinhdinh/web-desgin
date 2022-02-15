@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background-color: antiquewhite;
+}
+.menu{
+	margin-bottom:40px;
+
+}
+.danhsach img{
+	margin-bottom:-43px;
+}
+.danhsach ul{
+  text-align: center;
+
+	
+}
+.danhsach ul li{
+	display:inline-block;
+	padding:20px;
+	
+	
+}
+.danhsach ul li a{
+	text-decoration: none;
+	list-style: none;
+	font-size:25px;
+	color:#000000;
+	font-family:adamina;
+	font-weight:bold;
+	padding-bottom: 20px;
+
+}
+.danhsach a:hover{
+	color:#EF090C;
+}
+.image{
+	position: relative;
+}
+h2{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+a{
+	text-decoration: none;
+	list-style: none;
+	color: #000000;
+}
+
+.table{
+	margin-top: 50px;
+}
+table{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 20px;
+	margin-left: 180px;
+	text-align: center;
+}
+.image img{
+	width: 50%;
+}
+
